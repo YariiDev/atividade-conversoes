@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin → Celsius · Conversor</title>
+    <link rel="stylesheet" href="segunda-pagina.css">
+</head>
+<body>
+
+    <!-- ========== NAVEGAÇÃO FIXA NO TOPO ========== -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="ativo">Conversão de Unidades</a></li>
+            <li><a href="segunda-pagina.html">Conversão de Temperatura</a></li>
+            <li><a href="pagina_3.html">Conversão de Moedas</a></li>
+            <li><a href="pagina_4.html">Conversão de Tempo</a></li>
+        </ul>
+    </nav>
+
+    <!-- ========== CONTEÚDO PRINCIPAL CENTRALIZADO ========== -->
+    <main>
+        <h1>Conversor de Kelvin para Celsius</h1>
+        <p>Insira o valor em Kelvin e veja a temperatura no termômetro</p>
+
+        <!-- Área do termômetro -->
+        <div class="termometro-wrapper">
+            <!-- Coluna do termômetro -->
+            <div class="has-te">
+                <div class="haste">
+                    <div class="mercúrio" id="mercurio"></div>
+                </div>
+                <div class="bulbo"></div>
+                <div class="escala">
+                    <span>100 °C</span>
+                    <span>50 °C</span>
+                    <span>0 °C</span>
+                    <span>-50 °C</span>
+                    <span>-100 °C</span>
+                    <span>-273 °C</span>
+                </div>
+            </div>
+
+            <!-- Lado direito: input e resultado -->
+            <div class="lado-direito">
+                <div class="input-group">
+                    <label for="kelvinInput">Kelvin (K)</label>
+                    <input type="number" id="kelvinInput" step="any" placeholder="ex: 300" value="300">
+                </div>
+
+                <button id="converterBtn">Converter</button>
+
+                <div id="resultado">
+                    °C = <span id="celsiusValor">26.85</span>
+                </div>
+
+                <span class="fórmula">Fórmula: °C = K − 273,15</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- ========== RODAPÉ ========== -->
+    <footer>
+        <p>🧪 Conversão térmica · Kelvin → Celsius</p>
+    </footer>
+
+    <!-- ========== JAVASCRIPT SEPARADO ========== -->
+    <script src="segunda-pagina.js"></script>
+
+</body>
+</html>
