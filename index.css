@@ -1,0 +1,129 @@
+/* ==========================================================================
+   TEMA DE CORES: DARK SOULS / ER
+   Fundo: #0b0b0b (Escuro Profundo)
+   Texto Base: #c4b499 (Pergaminho Antigo)
+   Destaque/Títulos: #d1b47c (Ouro)
+   Links/Secundário: #8c7e65 (Bronze Apagado)
+   Brasa/Resultado: #ff5500 e #ffcc00 (Fogo/Brilho)
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #c4b499;
+    font-family: 'Times New Roman', Times, serif; /* Estilo clássico/antigo */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Navegação (Links do Topo) */
+nav {
+    margin-bottom: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: #8c7e65;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff3db;
+    text-shadow: 0 0 8px rgba(255, 140, 0, 0.6);
+}
+
+/* Cabeçalho */
+h1 {
+    color: #d1b47c;
+    font-size: 2.5rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(209, 180, 124, 0.3);
+    text-align: center;
+}
+
+/* Formulário e Inputs */
+label {
+    color: #8c7e65;
+    display: block;
+    margin-bottom: 10px;
+    font-style: italic;
+    letter-spacing: 0.05em;
+}
+
+input[type="number"] {
+    background-color: #141414;
+    border: 1px solid #524a3c;
+    color: #d1b47c;
+    padding: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 0; /* Mantém o aspecto rígido/antigo */
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-color: #d1b47c;
+    box-shadow: 0 0 10px rgba(209, 180, 124, 0.2);
+}
+
+/* Botão de Ação */
+button {
+    background: transparent;
+    border: 1px solid #d1b47c;
+    color: #d1b47c;
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: rgba(209, 180, 124, 0.1);
+    border-color: #ff5500;
+    box-shadow: 0 0 15px rgba(255, 85, 0, 0.4);
+}
+
+/* Bloco de Resultado */
+#resultadoTabuada {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    min-height: 40px;
+    text-align: center;
+}
+
+/* Estilo para quando o resultado for gerado com sucesso via JS */
+#resultadoTabuada p {
+    color: #ffcc00;
+    text-shadow: 0 0 8px rgba(255, 85, 0, 0.6);
+}
+
+/* Estilo caso queira usar para mensagens de erro no JS */
+#resultadoTabuada .erro {
+    color: #ff3333;
+    text-shadow: 0 0 5px rgba(255, 0, 0, 0.4);
+}
