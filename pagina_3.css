@@ -1,0 +1,86 @@
+/* Importação de fonte similar à da EA */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #161616; /* Fundo grafite característico da EA */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* Container de entrada estilo 'Input Field' da EA */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.85rem;
+    color: #b0b0b0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+input {
+    background-color: #2a2a2a;
+    border: 2px solid transparent; /* Borda invisível inicialmente */
+    color: white;
+    padding: 14px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #ffffff; /* Foco branco característico */
+    background-color: #333333;
+}
+
+/* Botão estilo "Action" da EA */
+button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 14px 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    max-width: 400px;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Área de Resultado */
+#ResultadodaConversao {
+    margin-top: 40px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    border-left: 4px solid #ffffff; /* Detalhe lateral de destaque */
+    background-color: #1e1e1e;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
