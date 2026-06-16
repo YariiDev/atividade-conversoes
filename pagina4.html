@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conversão</title>
+    <title>Conversor - min/s</title>
     <link rel="stylesheet" href="pagina4.css">
 </head>
 <body class="body-pagina4">
-    
+<nav class="nav-principal">
+    <div class="nav-container">
+        <a href="index.html" class="nav-item">Conversor cm/M</a>
+        <a href="pagina_2.html" class="nav-item">Conversor K/°C</a>
+        <a href="pagina_3.html" class="nav-item">Conversor U$/R$</a>
+        <a href="#" class="nav-item active">Conversor Min/s</a>
+    </div>
+</nav>
 
-    <script src="pagina4.js"></script>
+<h1 class="titulo">Conversor - min/s</h1>
+<div class="div-pergunta">
+    <h1>Selecione o número desejado</h1>
+    <label for="numero input">Digite um número: </label>
+    <input type="number" id="numeroInput" placeholder="EX:60">
+    <button id="btnGerar">Gerar conversão</button>
+</div>
+
+<div class="div-resposta" id="resultadoConversao">
+
+</div>
+<script src="pagina4.js"></script>
 </body>
 </html>
